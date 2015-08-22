@@ -230,10 +230,8 @@ body {
         max-height: 100%;
         display: inline-block;
         vertical-align: middle;
-    }
 
-    .stack-center .stacked-center li {
-        text-align: left;
+        li, dt, dd { text-align: left; }
     }
 }
 
