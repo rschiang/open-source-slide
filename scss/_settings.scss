@@ -1,0 +1,20 @@
+// SCSS settings
+
+// Typography
+$body-font-family: "Source Sans Pro", "Trebuchet MS", Roboto, Helvetica, Arial,
+    "Source Han Sans TC", "Noto Sans T Chinese", "Pingfang TC", "LiHei Pro",
+    "Microsoft Jhenghei", sans-serif;
+
+// Colors
+$background-color: #eeeeee;
+$slide-color: #fafafa;
+$text-color: #333;
+
+$accent-color-primary: #377fd9;
+$accent-color-secondary: #83cbfb;
+$alt-color-primary: #edf68d;
+$alt-color-secondary: #f1d851;
+
+// Compass defaults
+$default-transition-duration: 0.28s;
+$default-transition-function: cubic-bezier(0.4, 0, 0.2, 1);

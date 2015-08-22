@@ -1,15 +1,5 @@
-
-$body-font-family: "Source Sans Pro", "Trebuchet MS", Roboto, Helvetica, Arial,
-    "Source Han Sans TC", "Noto Sans T Chinese", "Pingfang TC", "LiHei Pro",
-    "Microsoft Jhenghei", sans-serif;
-
-$background-color: #eeeeee;
-$slide-color: #fafafa;
-$text-color: #333;
-$accent-color-primary: #377fd9;
-$accent-color-secondary: #83cbfb;
-$alt-color-primary: #edf68d;
-$alt-color-secondary: #f1d851;
+@import "settings";
+@import "compass/css3/transition";
 
 html {
     background-color: $background-color;
@@ -29,23 +19,12 @@ body {
 	background-color: $slide-color;
 }
 
-.flowtime h1,
-.flowtime h2,
-.flowtime h3,
-.flowtime h4,
-.flowtime h5,
-.flowtime h6,
-.flowtime p,
-.flowtime ul,
-.flowtime ol,
-.flowtime dl,
-.flowtime li,
-.flowtime dt,
-.flowtime dd {
-	display: block;
-	   -moz-transition: all 0.3s cubic-bezier(.77, .10, .22, 1);
-	-webkit-transition: all 0.3s cubic-bezier(.77, .10, .22, 1);
-	    		transition: all 0.3s cubic-bezier(.77, .10, .22, 1);
+.flowtime {
+    h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, dt, dd {
+        display: block;
+        @include single-transition(all);
+    }
+
 }
 
 /* headings */
