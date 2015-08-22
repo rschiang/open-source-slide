@@ -236,3 +236,14 @@ body {
         text-align: left;
     }
 }
+
+// Hack: temporary grid
+.grid-container {
+}
+
+.grid-left, .grid-right {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 50%;
+}
