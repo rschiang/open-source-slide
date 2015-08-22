@@ -95,7 +95,7 @@ body {
     }
 
     ul li, dl dt {
-        ::before {
+        &::before {
             color: $alt-color-secondary;
             content: "\2022";
             display: inline-block;
@@ -112,7 +112,7 @@ body {
     }
 
     ol li {
-        ::before {
+        &::before {
             color: $alt-color-secondary;
             content: counter(list) ".";
             counter-increment: list;
@@ -146,8 +146,8 @@ body {
     q {
         quotes: "“" "”";
 
-        ::before { content: open-quote; }
-        ::after { content: close-quote; }
+        &::before { content: open-quote; }
+        &::after { content: close-quote; }
     }
 
     blockquote {
