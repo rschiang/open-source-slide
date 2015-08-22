@@ -32,6 +32,13 @@ body {
     background-color: $slide-color;
 }
 
+.ft-page-thumb {
+    background-color: rgba(#8a8a8a, .54);
+
+    &.actual { background-color: rgba(#8a8a8a, .87); }
+    &:hover { background-color: #8a8a8a; }
+}
+
 .flowtime {
     h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, dt, dd {
         display: block;
