@@ -7,7 +7,7 @@ html {
     font-family: $body-font-family;
     font-size: 100%;
     line-height: 1.5rem;
-    text-shadow: 0 1px 4px rgba(255, 255, 255, .2);
+    text-shadow: 0 1px 2px rgba(#8a8a8a, .13);
 }
 
 body {
@@ -25,20 +25,17 @@ body {
         @include single-transition(all);
     }
 
-}
+    h1, h2, h3, h4, h5, h6 {
+        color: $accent-color-primary;
+    	font-weight: bold;
+    	text-shadow: 0 1px 4px rgba($alt-color-secondary, .13);
 
-/* headings */
-
-.flowtime h1,
-.flowtime h2,
-.flowtime h3,
-.flowtime h4,
-.flowtime h5,
-.flowtime h6 {
-	font-family: inherit;
-	font-weight: bold;
-	color: $accent-color-primary;
-	text-shadow: 1px 2px 0 rgba(255,255,255,0.2);
+        &.subtitle {
+            color: $accent-color-secondary;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba($alt-color-secondary, .13);
+        }
+    }
 }
 
 .flowtime h1 {

@@ -1,27 +1,54 @@
 doctype html
 html
     head
+        / Metadata information
+        - author = "Poren Chiang"
+        - title = "從開源文化到開放校園"
+        - subtitle = "From FLOSS culture to free campus"
+        - description = ""
+        - url = "http://rschiang.github.io/open-source-slide/"
+        - image = ""
+
         meta charset="utf-8"
         meta name="viewport" content="initial-scale=1.0 minimal-ui"
-        meta name="author" content="Poren Chiang"
-        title 從開源文化到開放校園 · From FLOSS culture to free campus
+
+        title #{title} · #{subtitle}
+        meta name="author" content=author
+        meta name="description" content=description
+        meta property="og:type" content="article"
+        meta property="og:url" content=url
+        meta property="og:image" content=image
+
         link rel="stylesheet" href="flowtime/assets/css/reset.css"
         link rel="stylesheet" href="flowtime/css/flowtime.css"
         link rel="stylesheet" href="css/primary.css"
+        link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
     body
         div.flowtime
             div.ft-section data-id="intro"
                 div.ft-page id="/intro/title" data-id="title"
-                    h1 從開源文化到開放校園
-                    h2 From FLOSS culture to free campus
+                    h1.title = title
+                    h2.subtitle = subtitle
                 div.ft-page id="/intro/author" data-id="author"
-                    h3 RSChiang
+                    h1 RSChiang
                     ul
                         li 法律學系法學組三年級
                         li 臺大開源社發起人、第一屆社長
                         li 學生計算機年會副召集人
                     img src="https://farm4.staticflickr.com/3871/14649600626_1442441f4c_b.jpg"
+
         script src="flowtime/js/brav1toolbox.js"
         script src="flowtime/js/flowtime.min.js"
         javascript:
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-43357689-1']);
+            _gaq.push(['_trackPageview']);
+            _gaq.push(['_trackEvent', 'Slide', 'Landing', document.title]);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+            Flowtime.showProgress(true)
             Flowtime.start()
